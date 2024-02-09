@@ -20,7 +20,7 @@ function App() {
   const weather =(e)=>{
     e.preventDefault()
     e.target.value="Geeting Result"
-      const url = `https://api.tomorrow.io/v4/weather/realtime?location=${location}&apikey=KhXybO17XycRT9EVt5EMs5nVxPAqb3YA`
+      const url = `https://api.tomorrow.io/v4/weather/realtime?location=${location}&apikey=`
          const options = {method: 'GET', headers: {accept: 'application/json'}};
   
        fetch(url, options)
@@ -61,7 +61,7 @@ function App() {
       // else{
       //   e.target.value="Not Get !!!!"
       // }
-       const  url =`https://api.tomorrow.io/v4/weather/forecast?location=${lat},${lon}&apikey=KhXybO17XycRT9EVt5EMs5nVxPAqb3YA`
+       const  url =`https://api.tomorrow.io/v4/weather/forecast?location=${lat},${lon}&apikey=`
          const options = {method: 'GET', headers: {accept: 'application/json'}};
   
        fetch(url, options)
